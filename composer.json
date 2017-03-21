@@ -1,0 +1,16 @@
+{
+    "name": "hidonet/magento2-language-tr_tr",
+    "description": "Magento2 Turkish Locale Package / Magento2 Türkçe Dil Paketi",
+    "license": [
+        "OSL-3.0"
+    ],
+    "require": {
+        "magento/framework": "^100.0.0"
+    },
+    "type": "magento2-language",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
