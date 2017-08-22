@@ -1,6 +1,7 @@
 <?php
 /**
  * Adds cities of Turkey to Magento2 website / Magento2 sitenize Türkiye şehirlerini ekler
+ *
  * Copyright (C) 2016  Grinet
  * 
  * This file is part of Grinet/TurkeyCities.
