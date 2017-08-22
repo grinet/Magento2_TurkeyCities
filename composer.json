@@ -1,5 +1,5 @@
 {
-    "name": "grinet/magento2_turkeycities",
+    "name": "grinet/turkeycities",
     "description": "dds Turkey cities to your Magento2 for showing as list in address forms / Türkiye Þehirlerini Magento2 sitenize ekler ve adres þehirler listelenir",
     "keywords": ["Magento2", "Turkiye", "Türkiye", "Þehirler", "Þehirleri", "Türkçe"],
     "require": {
