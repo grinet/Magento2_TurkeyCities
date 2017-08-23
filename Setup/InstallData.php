@@ -33,14 +33,14 @@ class InstallData implements InstallDataInterface
      * {@inheritdoc}
      */
     public function install(ModuleDataSetupInterface $setup,ModuleContextInterface $context) 
-	{
+    {
 
-		$this->lang_codes = array(
-								'tr_TR',
-								'en_US',
-								'en_GB',
-								'de_DE',
-							);
+        $this->lang_codes = array(
+                                'tr_TR',
+                                'en_US',
+                                'en_GB',
+                                'de_DE',
+        );
 
         $data = [
             ['TR', '01', 'Adana'         ],
@@ -126,49 +126,49 @@ class InstallData implements InstallDataInterface
             ['TR', '81', 'Düzce'         ],
         ];
 
-		foreach ($data as $row) {
-			$region_name = $row[2];
+        foreach ($data as $row) {
+            $region_name = $row[2];
             $bind = ['country_id' => $row[0], 'code' => $row[1], 'default_name' => $this->tr2en($region_name)];
             $setup->getConnection()->insert($setup->getTable('directory_country_region'), $bind);
 
-			$regionId = $setup->getConnection()->lastInsertId($setup->getTable('directory_country_region'));
+            $regionId = $setup->getConnection()->lastInsertId($setup->getTable('directory_country_region'));
 
-			foreach ($this->lang_codes as $lang_code) 
-			{	
-				if ($lang_code != 'tr_TR') 
-				{
-					$region_name = $this->tr2en($region_name);
-				} // if sonu
-				
-				$bind = ['locale' => $lang_code, 'region_id' => $regionId, 'name' => $region_name];
-				$setup->getConnection()->insert($setup->getTable('directory_country_region_name'), $bind);
+            foreach ($this->lang_codes as $lang_code) 
+            {    
+                if ($lang_code != 'tr_TR') {
+                    $region_name = $this->tr2en($region_name);
+                } // if sonu
+                
+                $bind = ['locale' => $lang_code, 'region_id' => $regionId, 'name' => $region_name];
+                $setup->getConnection()->insert($setup->getTable('directory_country_region_name'), $bind);
 
-			} // foreach sonu
+            } // foreach sonu
         } // foreach sonu
 
-	}
+    }
 
-	// #######################################################################################################
-	public function tr2en($text) {
+    // #######################################################################################################
+    public function tr2en($text) 
+    {
 
-		$trans=array(
-						"Ç" => "C",
-						"Ğ" => "G",
-						"İ" => "I",
-						"Ö" => "O",
-						"Ş" => "S",
-						"Ü" => "U",
-						"ç" => "c",
-						"ğ" => "g",
-						"ı" => "i",
-						"ö" => "o",
-						"ş" => "s",
-						"ü" => "u",
-					);
-		
-		return strtr($text,$trans);
+        $trans=array(
+         "Ç" => "C",
+         "Ğ" => "G",
+         "İ" => "I",
+         "Ö" => "O",
+         "Ş" => "S",
+         "Ü" => "U",
+         "ç" => "c",
+         "ğ" => "g",
+         "ı" => "i",
+         "ö" => "o",
+         "ş" => "s",
+         "ü" => "u",
+                    );
+        
+        return strtr($text, $trans);
 
-	} // function sonu #######################################################################################
+    } // function sonu #######################################################################################
 
 
 }
