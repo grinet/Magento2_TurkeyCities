@@ -3,7 +3,6 @@
     "description": "Adds Turkey cities to your Magento2 for showing as list in address forms / Türkiye Şehirlerini Magento2 sitenize ekler ve adres formlarında şehirler listelenir",
     "keywords": ["Magento2", "Turkiye", "Türkiye", "Şehirler", "Şehirleri", "Turkey", "Cities", "Türkei"],
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
         "magento/module-directory": "100.*.*",
         "magento/framework": "100.*.*"
     },
