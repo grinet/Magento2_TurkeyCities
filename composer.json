@@ -5,6 +5,7 @@
     "require": {
 
     },
+    "version": "1.0.2",
     "type": "magento2-module",
     "license": [
         "OSL-3.0",
