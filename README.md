@@ -15,7 +15,7 @@ php bin/magento cache:clean
 
 # Composer ile kurulum
 ```bash
-composer require grinet/Grinet_TurkeyCities
+composer require grinet/turkeycities
 php bin/magento module:enable Grinet_TurkeyCities
 php bin/magento setup:upgrade
 php bin/magento cache:clean
@@ -44,7 +44,7 @@ php bin/magento cache:clean
 
 # Installation with composer
 ```bash
-composer require grinet/Grinet_TurkeyCities
+composer require grinet/turkeycities
 php bin/magento module:enable Grinet_TurkeyCities
 php bin/magento setup:upgrade
 php bin/magento cache:clean
