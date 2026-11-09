@@ -28,6 +28,8 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 class InstallData implements InstallDataInterface
 {
+    /** @var array */
+    public $lang_codes;
 
     /**
      * {@inheritdoc}

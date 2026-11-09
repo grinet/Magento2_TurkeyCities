@@ -80,3 +80,8 @@ Please send errors to info@grinet.com.tr ...
 ### [Grinet Turkpay - Magento1 Banka Sanal Pos Modülü](https://magesanalpos.com/grinet-turkpay-magento-icin-sanal-pos-modulu)
 ### [Grinet Turkpay Pro - Magento1 Banka Sanal Pos ve Açıktan Tahsilat Modülü](https://magesanalpos.com/grinet-turkpay-magento-icin-sanal-pos-modulu-pro)
 
+## PHP compatibility
+
+PHP 8.5 syntax and PHPCompatibility static checks were run on this release. Existing minimum PHP requirements are retained. Use a Magento release that supports your PHP runtime; syntax/static checks alone do not verify installation, DI compilation or storefront/admin behavior.
+
+The Composer `mage-os` and `mageos` keywords indicate expected compatibility based on Mage-OS retaining Magento namespaces and replacing the corresponding `magento/*` packages. The existing Magento requirements are preserved. No full Mage-OS integration test was performed. See https://mage-os.org/faq/ and https://repo.mage-os.org/packages.json.
